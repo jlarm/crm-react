@@ -5,10 +5,11 @@
         "build": "vite build",
         "build:ssr": "vite build && vite build --ssr",
         "dev": "vite",
-        "format": "prettier --write resources/",
+        "format": "npx prettier --write resources/",
         "format:check": "prettier --check resources/",
         "lint": "eslint . --fix",
-        "types": "tsc --noEmit"
+        "types": "tsc --noEmit",
+        "prepare": "husky install"
     },
     "devDependencies": {
         "@eslint/js": "^9.19.0",
@@ -17,7 +18,10 @@
         "eslint-config-prettier": "^10.0.1",
         "eslint-plugin-react": "^7.37.3",
         "eslint-plugin-react-hooks": "^5.1.0",
-        "prettier": "^3.4.2",
+        "husky": "^8.0.0",
+        "lint-staged": "^15.5.1",
+        "prettier": "^3.5.3",
+        "prettier-plugin-blade": "^2.1.21",
         "prettier-plugin-organize-imports": "^4.1.0",
         "prettier-plugin-tailwindcss": "^0.6.11",
         "typescript-eslint": "^8.23.0"

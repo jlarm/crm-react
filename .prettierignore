@@ -1,3 +1,13 @@
 resources/js/components/ui/*
 resources/js/ziggy.js
 resources/views/mail/*
+node_modules
+dist
+.env*
+vendor/
+/vendor
+public/
+.git
+**/.git
+package-lock.json
+composer.lock
