@@ -67,4 +67,14 @@ class Dealership extends Model
     {
         return $this->stores()->count() + 1;
     }
+
+    public function getStatusLabelAttribute(): string
+    {
+        return $this->status->label();
+    }
+
+    public function getRatingLabelAttribute(): string
+    {
+        return $this->rating->label();
+    }
 }

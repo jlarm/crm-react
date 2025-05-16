@@ -15,6 +15,8 @@ class DealershipResource extends JsonResource
             'city' => $this->city,
             'state' => $this->state,
             'phone' => $this->phone,
+            'statusLabel' => $this->statusLabel,
+            'ratingLabel' => $this->ratingLabel,
         ];
     }
 }

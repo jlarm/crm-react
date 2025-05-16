@@ -10,7 +10,7 @@ class DashboardController extends Controller
 {
     public function __invoke()
     {
-        $dealerships = DealershipResource::collection(Dealership::all());
+        $dealerships = DealershipResource::collection(Dealership::orderBy('name')->limit(10)->get());
 
         return Inertia::render('dashboard', [
             'dealerships' => $dealerships,
